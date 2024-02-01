@@ -1,0 +1,177 @@
+body {
+    font-family: sans-serif;
+    color: white;
+}
+
+/* Jumbotron */
+#jumbo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#jumbotron {
+    height: 25rem;
+}
+
+/* comics cards */
+#cardsWrapper {
+    display: flex;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.myBtn {
+    background-color: #0282f9;
+    display: inline-block;
+    border-radius: 0;
+}
+
+.loadText {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+.currentSeries {
+    padding: 0.4rem 1.6rem;
+    transform: translate(0, -50%);
+    color: white;
+}
+
+.loadBtn {
+    margin-bottom: 1rem;
+    padding: 0.6rem 4rem;
+
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+/* card singola */
+
+.comics-title {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 1rem 0 2rem 0;
+    color: #d3cfcf;
+}
+
+.comics-img {
+    height: 12rem;
+    width: 12rem;
+    object-fit: cover;
+    object-position: top;
+}
+
+.myCard {
+    width: calc(100% / 6);
+}
+
+.my-bg-dark {
+    background-color: #222;
+}
+
+/* HEADER */
+
+.myNav {
+    height: 110px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+}
+
+.header-logo {
+    width: 110px;
+    height: 110px;
+}
+
+.active {
+    color: #0282f9;
+    border-bottom: 5px solid #0282f9;
+    line-height: 10;
+}
+
+/* FOOTER */
+
+.upper-footer {
+    background-image: url("/assets/img/footer-bg.jpg");
+    min-height: 482px;
+    background-size: cover;
+}
+
+.footer-item {
+    list-style-type: none;
+}
+
+.footer-bg {
+    scale: 1.3;
+    position: absolute;
+    left: 85px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #777;
+}
+
+.footer-link:hover {
+    color: #0282f9;
+    transition: 0.5s;
+}
+
+/* footer inferiore */
+
+.lower-footer {
+    background-color: #303030;
+    height: 120px;
+
+}
+
+.lower-text {
+    color: #1778f9;
+    font-weight: 600;
+}
+
+.my-footer-btn {
+    border-color: #1778f9;
+    border-radius: 0;
+    padding: 0.8rem;
+}
+
+.lower-footer-img {
+    padding: 0 0.6rem;
+}
+
+.footer-wrapper-img {
+    overflow: hidden;
+    width: 782px;
+    height: 482px;
+    position: relative;
+}
+
+/* Home */
+
+.buy-text {
+    margin: 0;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.buy-img {
+    height: 60px;
+}
+
+#buyRow {
+    background-color: #0282f9;
+}
+
+.wideImg {
+    height: 47px;
+}
