@@ -19,7 +19,8 @@ class ProjectController extends Controller
                 "title" => "required|min:5|max:50",
                 "description" => "",
                 "image" => "max:200",
-                "topic" => "required"
+                "topic" => "required",
+                "type_id" => "",
             ],
             [
                 'title.required' => 'Il titolo è necessario',

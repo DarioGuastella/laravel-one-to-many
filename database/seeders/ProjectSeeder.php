@@ -21,6 +21,7 @@ class ProjectSeeder extends Seeder
             $array_project->description = $project_item["description"];
             $array_project->image = $project_item["image"];
             $array_project->topic = $project_item["topic"];
+            $array_project->type_id = $project_item["type_id"];
 
             $array_project->save();
         }

@@ -8,6 +8,9 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">{{ $project->title }}</div>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            {{ $project->type ? $project->type->name : 'senza categoria' }}
+                        </h6>
                         <div class="card-body">{{ $project->description }}</div>
                         <a class="d-flex justify-content-center" href="{{ route('admin.projects.show', $project->id) }}"><img
                                 src="{{ $project->image }}" class="comics-img w-25 align-self-center"
