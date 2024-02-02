@@ -6,9 +6,27 @@ use App\Http\Controllers\Controller;
 use App\Models\Type;
 use App\Http\Requests\StoreTypeRequest;
 use App\Http\Requests\UpdateTypeRequest;
+use Illuminate\Support\Facades\Validator;
 
 class TypeController extends Controller
 {
+
+    public function validation($data)
+    {
+        $validated = Validator::make(
+            $data,
+            [
+                "name" => "required|min:5|max:50",
+                "description" => "required",
+            ],
+            [
+                'name.required' => 'Il nome è necessario',
+                'description.required' => 'La descrizione della tipologia è necessaria'
+            ]
+        )->validate();
+
+        return $validated;
+    }
     /**
      * Display a listing of the resource.
      */
