@@ -4,8 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Type;
-use App\Http\Requests\StoreTypeRequest;
-use App\Http\Requests\UpdateTypeRequest;
+use App\Http\Requests\TypeRequest;
 use Illuminate\Support\Facades\Validator;
 
 class TypeController extends Controller
@@ -48,7 +47,7 @@ class TypeController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreTypeRequest $request)
+    public function store(TypeRequest $request)
     {
         $data = $request->all();
         $dati_validati = $this->validation($data);
@@ -80,7 +79,7 @@ class TypeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateTypeRequest $request, Type $type)
+    public function update(TypeRequest $request, Type $type)
     {
         $data = $request->all();
         $dati_validati = $this->validation($data);
